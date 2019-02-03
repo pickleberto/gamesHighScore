@@ -1,0 +1,15 @@
+{% extends 'master' %}
+
+{% block content %}
+	<div class="players-wrapper">
+	    {% for player in players %} 
+	      <div class="player">
+	        <h3><a href="players/{{ player.id }}"> {{ player.name }} </a></h3> 
+	        <p>HighScore: {{ player.score }} </p>
+	      </div>
+	      <hr>
+	    {% else %}
+	  		<h3> No players found </h3>
+	    {% endfor %}
+  	</div>
+{% endblock %}

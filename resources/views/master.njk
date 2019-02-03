@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="https://cdn.rawgit.com/twbs/bootstrap/v4-dev/dist/css/bootstrap.css">
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <div class="container">
+
+    <div class="header clearfix">
+      <nav>
+        <ul class="nav nav-pills pull-xs-right">
+          <li class="nav-item"><a href="/players" class="nav-link">Home</a></li>
+          <li class="nav-item"><a href="/players/create" class="nav-link">Add Player</a></li>
+        </ul>
+        <h3 class="text-muted">Players HighScores</h3>
+      </nav>
+    </div>
+
+    <section>
+      {% block content %}{% endblock %}
+    </section>
+
+  </div>
+</body>
+</html>

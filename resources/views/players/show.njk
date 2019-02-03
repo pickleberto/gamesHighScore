@@ -1,0 +1,19 @@
+{% extends 'master' %}
+
+{% block content %}
+  <div class="player">
+    <div>
+      <a href="/">  Go Back </a>
+    </div>
+    <hr>
+    <h1 style="color: blue">{{ player.name }}</h1>
+    <br/>
+    <h5>Email : {{ player.email }}</h5>
+    <br/>
+    <h5>HighScore : {{ player.score }} pts</h5>
+    <br/>
+    <h5>pass : {{ player.password }}</h5>
+    <br/>
+    <h5>ID : {{ player.id }}</h5>
+  </div>
+{% endblock %}
