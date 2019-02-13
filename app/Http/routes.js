@@ -17,7 +17,7 @@
 
 const Route = use('Route')
 
-
+Route.get('/', 'PlayersController.index')
 Route.resource('players', 'PlayersController').only('create', 'store', 'show', 'index')
 
 
