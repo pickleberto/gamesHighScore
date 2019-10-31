@@ -1,3 +1,3 @@
 # GamesHighScore
 
-Highscore server made in adonis js
+Highscore server made in adonis js.
